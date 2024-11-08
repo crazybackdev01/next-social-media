@@ -1,0 +1,13 @@
+.tiptap p.is-editor-empty:first-child::before {
+  color: theme("colors.muted.foreground");
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tiptap.ProseMirror {
+  outline: none;
+}
+
+/* These classes are taken from TipTap docs because without these classes, Placeholder text will not be visible to the client */
